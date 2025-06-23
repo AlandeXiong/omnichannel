@@ -1,6 +1,8 @@
+
 const express = require("express");
 const app = express();
 const path = require('path');
+
 
 app.use(express.json());
 
@@ -17,6 +19,6 @@ app.get("/", (req, res) => {
 
 
 
-app.listen(process.env.PORT || 5000, () => {
-    console.log("Server is running on port " + (process.env.PORT || 5000));
+app.listen(process.env.PORT || 900, () => {
+    console.log("Server is running on port " + (process.env.PORT || 900));
 });
